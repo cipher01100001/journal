@@ -1,9 +1,9 @@
-import { useMemo } from "react"
+import { useMemo } from "react";
 
-import { useDispatch, useSelector } from "react-redux"
-import { Link as RouterLink } from "react-router-dom"
-import { Alert, Button, Grid, Link, TextField, Typography } from "@mui/material"
-import { Google } from "@mui/icons-material"
+import { useDispatch, useSelector } from "react-redux";
+import { Link as RouterLink } from "react-router-dom";
+import { Alert, Button, Grid, Link, TextField, Typography } from "@mui/material";
+import { Google } from "@mui/icons-material";
 
 import { AuthLayout } from "../layout/AuthLayout";
 
@@ -67,7 +67,7 @@ export const LoginPage = () => {
           </Grid>
 
           <Grid container mt={2}>
-            <Grid item sm={12} display={!!errorMessage ? '' : 'none'}>
+            <Grid item sm={12} display={errorMessage ? '' : 'none'}>
               <Alert severity="error"> {errorMessage} </Alert>
             </Grid>
           </Grid>

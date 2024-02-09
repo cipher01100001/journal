@@ -1,7 +1,9 @@
-import { LogoutOutlined, MenuOutlined } from "@mui/icons-material"
-import { AppBar, Grid, IconButton, Toolbar, Typography } from "@mui/material"
-import { startLogout } from "../../store/auth"
-import { useDispatch } from "react-redux"
+import { LogoutOutlined, MenuOutlined } from "@mui/icons-material";
+import { AppBar, Grid, IconButton, Toolbar, Typography } from "@mui/material";
+import { startLogout } from "../../store/auth";
+import { useDispatch } from "react-redux";
+
+import PropTypes from "prop-types";
 
 export const Navbar = ({ drawerWidth = 240 }) => {
 
@@ -44,4 +46,8 @@ export const Navbar = ({ drawerWidth = 240 }) => {
 
         </AppBar>
     )
+}
+
+Navbar.propTypes = {
+    drawerWidth: PropTypes.number.isRequired,
 }
